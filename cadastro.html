@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Produto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img/logowhite.png" width=150em height=150em>
+        <h1>Cadastrar Produto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cadastro.html">Cadastrar Produto</a></li>
+                <li><a href="produtos.html">Lista de Produtos</a></li>
+                <li><a href="empresa.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="form-cadastro">
+            <div>
+                <label for="nome">Nome do Produto:</label>
+                <input type="text" id="nome" required>
+            </div>
+            <div>
+                <label for="imageUpload">Escolha uma imagem PNG:</label>
+                <input type="file" id="imageUpload" name="imageUpload" accept=".png" required>
+            </div>
+            <div>
+                <label for="valor">Valor:</label>
+                <input type="number" id="valor" required>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

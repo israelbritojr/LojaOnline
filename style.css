@@ -1,0 +1,323 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    background-image: url(img/pessoa1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+}
+
+header, .title, .product h2, .product h3, .product p {
+    font-size: 1em; /* Escala com base no tamanho do body */
+}
+
+header{
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li{
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    padding: 20px;
+}
+
+.product{
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*Página Contato */
+.container {
+    background-color: #fff; /* Fundo branco */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 20px; /* Espaçamento interno */
+    margin: 10px; /* Margem externa */
+    width: fit-content; /* Ajusta a largura conforme necessário */
+}
+
+.container img {
+    margin-bottom: 10px; /* Adiciona espaço abaixo da imagem */
+}
+
+.container h1,.container h2 {
+  margin-bottom: 5px; /* Espaço entre cabeçalhos */
+}
+.container p {
+  font-size: 16px; /* Tamanho do texto */
+}
+
+.container a img {
+    margin-right: 5px; /* Espaçamento entre ícones */
+}
+
+
+/* Página Sobre nós*/
+#empresa{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    max-width: auto; /* Limita a largura máxima do cartão */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-size: 2em;
+    color:  #333;
+    margin-bottom: 0.2rem;
+}
+
+.sobre{
+    font-weight: bold;
+    text-align: justify;
+}
+
+#avaliacoes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 7px;
+    max-width: auto; /* Limita a largura máxima do cartão */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2px;
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Formulário de Cadastro e Contato */
+
+/* Estilo geral do formulário */
+form {
+    max-width: 400px; /* Define uma largura máxima */
+    margin: 0 auto; /* Centraliza o formulário */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #333; /* Cor de fundo clara */
+}
+
+/* Estilo para os rótulos (labels) */
+form label {
+    display: block;
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Estilo para os campos de entrada */
+form input[type="text"],
+form input[type="number"],
+form input[type="file"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    color: #000000;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* Estilo para o campo de upload de imagem */
+form input[type="file"] {
+    padding: 5px;
+}
+
+/* Estilo para o campo de textarea */
+form textarea {
+    resize: vertical;
+}
+
+/* Efeito ao focar no campo */
+form input:focus,
+form textarea:focus {
+    border-color: #007bff; /* Altera a cor da borda ao focar */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Estilo para o botão de envio */
+form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Cor azul */
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+/* Espaçamento entre os campos */
+form .form-group {
+    margin-bottom: 15px;
+}
+
+
+/* Container da vitrine */
+#vitrine {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilo para cada produto */
+.product {
+    width: calc(100% / 4 - 20px); /* Ocupa 1/4 da largura da vitrine com espaçamento */
+    max-width: 300px; /* Limita a largura máxima do cartão */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para a imagem */
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 0.625rem;
+    object-fit: cover; /* Garante que a imagem se ajuste dentro do contêiner */
+    max-height: 17rem; /* Define uma altura máxima para as imagens */
+}
+
+/* Título do produto */
+.product h2 {
+    font-size: 1.1em;
+    color:  #1500a1;
+    margin-bottom: 0.2rem;
+}
+
+.product h3 {
+    font-size: 2em;
+    color: #1500a1;
+    margin: 5px 0;
+}
+
+.product p{
+    font-size: 1em;
+    color:  #1500a1;
+    margin: 2px 0;
+}
+
+/* Botões */
+.product button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Estilos para telas pequenas (celulares) */
+@media (max-width: 600px) {
+    header nav ul li {
+        display: block; /* Empilha os itens do menu para telas pequenas */
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    /* Ajuste a largura do formulário e dos produtos */
+    form, .product {
+        width: 90%; /* Reduz a largura para caber em telas pequenas */
+        max-width: none;
+    }
+
+    /* Ajuste dos produtos para ocupar toda a largura */
+    .product {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+/* Estilos para telas médias (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    #vitrine {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .product {
+        width: calc(50% - 20px); /* Ajuste para dois produtos por linha */
+    }
+}
+
+/* Estilos para telas grandes (desktops) */
+@media (min-width: 1025px) {
+    /* Mantém o layout original para desktops */
+    .product {
+        width: calc(100% / 4 - 20px);
+    }
+}
